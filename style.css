@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #48a30012;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  margin: 0 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: #48a300;
+  margin-top: 15px;
+}
+
+.title span {
+  color: #61481c;
+}
+
+.container {
+  max-width: 660px;
+  border-radius: 15px;
+  background-color: rgba(250, 241, 241, 0.596);
+  margin: 30px auto;
+  padding: 35px;
+  box-shadow: 0 0 10px rgba(46, 49, 45, 0.2);
+}
+.sub-title {
+  font-size: 32px;
+}
+
+.sun-logo {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  animation-name: sunRound;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.sun-face {
+  position: relative;
+  right: 37.5px;
+  bottom: 3px;
+  animation-name: sunFace;
+  animation-timing-function: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+.title-para {
+  margin-top: 25px;
+  color: #858585;
+  font-size: 14px;
+}
+
+.progress-bar {
+  height: 30px;
+  border-radius: 15px;
+  background-color: #48a3001a;
+  margin-top: 20px;
+}
+
+.progress-value {
+  height: 100%;
+  max-width: 100%;
+  width: 0;
+  background-color: #48a300;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  transition: width 0.15s ease-out;
+}
+
+.progress-value span {
+  color: #e5ecd8;
+  font-size: 10px;
+  padding-left: 20px;
+  text-wrap: nowrap;
+  
+  
+}
+
+/* Goal section starts here */
+
+.goal-para {
+  color: #ff5151;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.warrning-msg {
+  visibility: hidden;
+}
+
+.goal-box1 {
+  height: 82px;
+  border: 1px solid rgba(128, 128, 128, 0.315);
+  border-radius: 17px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background-color: white;
+}
+
+.checkbox-circle {
+  height: 24px;
+  width: 24px;
+  border: 2px solid hsla(38, 55%, 25%, 0.3);
+  border-radius: 50%;
+  margin-left: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.checkbox-circle .tick-mark {
+  width: 14px;
+  
+}
+
+.first-goal-input {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  height: inherit;
+
+  border: none;
+  outline: none;
+  padding-left: 20px;
+}
+
+input[type="text"]::placeholder {
+  color: #d9d9d9;
+}
+
+.completed .checkbox-circle {
+
+   background-color: #48a300;
+   border-color: #48a300;
+
+}
+
+.completed .text-decor {
+  text-decoration: line-through;
+  color: #48a300;
+}
+.last-para {
+  text-align: center;
+  margin-top: 35px;
+  font-weight: 600;
+}
+.made-by-me {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 12px;
+}
+
+
+@keyframes sunRound {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Media query starts here */
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 38px;
+
+  }
+
+  .container {
+    border-radius: 12px;
+    margin: 15px auto;
+    padding: 20px;
+  }
+
+  .sub-title {
+    font-size: 25px;
+  }
+  .sun-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .sun-face {
+    position: relative;
+    right: 31.4px;
+    bottom: 0px;
+    transform: scale(.8);
+  }
+
+  .title-para {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .progress-bar {
+    height: 20px;
+    border-radius: 12px;
+    margin-top: 15px;
+  }
+  .goal-box1 {
+    height: 65px;
+    border-radius: 12px;
+    margin-top: 10px;
+    
+  }
+
+  .checkbox-circle {
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    
+    }
+    .checkbox-circle .tick-mark {
+      width: 10px;
+   
+      
+  }
+}
+    
